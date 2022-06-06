@@ -27,7 +27,9 @@ def mean_filter(photo, filter_size):
 
 if __name__ == '__main__':
 
+    square_mask_size = 40
+    # image location
     photo = Image.open("road.jpg")
     photo = photo.convert("L")
 
-    mean_filter(photo, 71).show()
+    mean_filter(photo, square_mask_size).show()
